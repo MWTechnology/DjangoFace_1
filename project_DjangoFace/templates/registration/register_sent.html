@@ -1,0 +1,17 @@
+{% extends  'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">Регистрация прошла успешно!</h4>
+    <p class="text-center"> Ваш аккаунт будет активирован после проверки данных.</p>
+    <p class="text-center"> Повторите вход в аккаунт спустя 24 часа!</p>
+    <a class="btn btn-primary btn-block" href="{% url 'login' %} ">Авторизоваться<span class="sr-only">(current)</span></a>
+
+</div>
+</div>
+{% endblock %}
+
